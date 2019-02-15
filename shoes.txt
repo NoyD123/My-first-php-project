@@ -1,0 +1,6 @@
+ Id | ModeL | Store Name | Price
+
+  1,  adidas,  adidas,  450
+  2,  nick,  nick,  300
+  3,  w,  w,  200
+  4,  allstar,  allstar,  320

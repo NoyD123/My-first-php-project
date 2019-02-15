@@ -1,0 +1,405 @@
+*{
+    box-sizing:harder-box;
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+    padding-top: 4px;
+}
+
+html
+{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+body{ 
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-position: center center;
+    background-repeat: no-repeat;        
+    text-align: center;
+}
+
+main{
+    
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 15%;
+    min-width: 15%;
+    box-shadow: 7px 7px 4px #cc66ff;
+    background-color:  #dd99ff;
+    color: #ffffff;
+    margin: 40px 25%;
+}
+
+h1 {
+    color: #e60073;
+    font-size: 28px;
+}
+h4
+{
+   color: #e60073;
+    font-size: 18px; 
+}
+
+p{
+   color: blueviolet;
+    font-size:16px;
+}
+
+pre{
+    font-size: 20px;
+    color:#e60073;
+}
+
+
+/*manu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/*start page*/
+
+.demo-block svg {
+    display: block;
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#text1 {
+    text-anchor: middle;
+    fill: none;
+    font-weight: normal;
+    font-size: 2em;
+    font-family: 'AR Berkley';
+    stroke: white;
+    stroke-width: 2;
+}
+#text-path-anim2 {
+    font-size: 3em;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: stroke 10s linear infinite;
+}
+@keyframes stroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+footer{
+    position:fixed;
+    bottom:0; 
+	width:100%;
+    color: white;
+    background-color:darkorchid;
+}
+
+
+/*  page 3 css */
+img{
+    height: 200px;
+    width: 300;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 12px;
+  color:#e60073;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+input[type=text]:focus {
+    border: 3px solid #000000;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color:darkorchid;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    margin: 4px 2px;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+    color:darkorchid;
+    cursor: pointer;
+}
+
+.next {
+  left: 75%;
+}
+
+.prev {
+    right: 75%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:darkmagenta;
+  font-size: 25px;
+  padding-left: 25%;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:darkorchid;
+}
+
+/* Fading animation */
+.mySlides {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+    } 
+  to {
+      opacity: 1
+    }
+}
+
+.star-container {
+    width: 100%;
+}
+
+/*כוכב ראשון*/
+
+.star-s1 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    color: #FFFFFF;
+    animation: pulse1 2.1s linear infinite;
+}
+
+/*כוכב שני*/
+
+.star-s2 {
+    top: 68%;
+    left: 5%;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    color: blueviolet;
+    animation: pulse1 1s linear infinite;
+}
+
+/*כוכב שלישי*/
+
+.star-s3 {
+    top: 48%;
+    left: 75%;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    color: chartreuse;
+    animation: pulse2 3s linear infinite;
+}
+
+/*כוכב רביעי*/
+
+.star-s4 {
+    top: 88%;
+    left: 75%;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    color: aqua;
+
+    animation: pulse1 .6s linear infinite;
+}
+
+/*כוכב חמישי*/
+
+.star-s5 {
+    top: 45%;
+    left: 9%;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    color: darksalmon;
+    animation: pulse1 1.6s linear infinite;
+}
+
+/*כוכב שישי*/
+
+.star-s6 {
+    top: 55%;
+    left: 29%;
+    position: absolute;
+    width: 0.7px;
+    height: 0.7px;
+    color: deeppink;
+
+    animation: pulse1 .4s linear infinite;
+}
+
+/*כוכב שביעי*/
+
+.star-s7 {
+    top: 14%;
+    left: 19%;
+    position: absolute;
+    width: 0.7px;
+    height: 0.7px;
+    color: #FF9F1C;
+    animation: pulse1 .6s linear infinite;
+}
+
+/*כוכב שמיני*/
+
+.star-s8 {
+    top: 44%;
+    left: 39%;
+    position: absolute;
+    width: 1.7px;
+    height: 1.7px;
+    color: #FF9F1C;
+    border-radius: 50%;
+    animation: pulse1 1.6s linear infinite;
+}
+
+/*כוכב תשיעי*/
+
+.star-s9 {
+    top: 5%;
+    left: 15%;
+    position: absolute;
+    width: 1.7px;
+    height: 1.7px;
+    color: chartreuse;
+    border-radius: 50%;
+    animation: pulse3 10s linear infinite;
+
+
+}
+
+@keyframes pulse1 {
+    0% {
+
+        transform: scale(2.5);
+    }
+    50% {
+
+        transform: scale(0.8);
+    }
+    100% {
+
+        transform: scale(1);
+    }
+
+}
+
+@keyframes pulse2 {
+    0% {
+
+        transform: scale(3.2);
+    }
+    50% {
+
+        transform: scale(0.8);
+    }
+    100% {
+
+        transform: scale(1);
+    }
+
+}
+
+@keyframes pulse3 {
+
+    from {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+
+}
+
+/*on page gallery*/
+.picture-group {
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+/*image of navs in the home page*/
+
+.c1 {
+    width: 100%;
+    height: 400px;
+}
+/*the image from gallery*/
+#matrenity {
+    margin: auto;
+    text-align: right;
+    border: 1px solid transparent;
+    padding: 60px;
+    background-color: red;
+}
+
+#matrenity img {
+    width: 500px;
+    height: 220px;
+}
